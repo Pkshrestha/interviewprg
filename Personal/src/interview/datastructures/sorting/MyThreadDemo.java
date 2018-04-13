@@ -65,7 +65,7 @@ class Print11{
  	
  	
  }
-public class MyThread
+public class MyThreadDemo
 {
 	public static void main(String[] args)
 	{Print11 p =new Print11();
