@@ -9,14 +9,17 @@ public class LinkedListReverse {
 		list.insertAtStart(9);
 
 		list.insertAtStart(11);
-
+		
+	list.traverse();
+list.delete(9);
+list.traverse();
 		//list.insertAtStart(4);
-		list.addAtPosition(19, 2);
+		/*list.addAtPosition(19, 2);
 		list.insertAtEnd(7);
 		list.insertAtEnd(8);
 		list.traverse();
 		list.reverse();
-		list.traverse();
+		list.traverse();*/
 		System.out.println(list.findmiddleinoneparse());
 		
 	}
@@ -29,6 +32,21 @@ class LinkedList {
 	Node end;
 	int size;
 	
+	public void delete(int deletenode){
+		Node n= start;
+		
+		if(start.next!=null){
+		while(n.next!=null ){
+			if(n.next.getValue()==deletenode){
+			if(n.getNext().getNext()!=null)
+			n.setNext(n.getNext().getNext());
+			else n.setNext(null);
+			break;}
+			n=n.getNext();
+			
+		}}
+		else start=null;
+		}
 	
 	public int findmiddleinoneparse(){
 		Node n= start;

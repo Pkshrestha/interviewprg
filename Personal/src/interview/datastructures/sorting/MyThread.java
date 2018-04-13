@@ -1,6 +1,5 @@
 package interview.datastructures.sorting;
-
-class Print{
+class Print11{
 		 boolean flag=false;
 		public synchronized void Mymethododd(int number){
 	 		System.out.println("flag"+flag+number);
@@ -39,9 +38,9 @@ class Print{
  {
 		int i=1;
 		 boolean iseven;
-		Print p;
+		Print11 p;
 		 
-	 public MyThread2(int i, boolean iseven,Print print) {
+	 public MyThread2(int i, boolean iseven,Print11 print) {
 		super();
 		this.i = i;
 		this.iseven = iseven;
@@ -69,7 +68,7 @@ class Print{
 public class MyThread
 {
 	public static void main(String[] args)
-	{Print p =new Print();
+	{Print11 p =new Print11();
 		MyThread2 t1=new MyThread2(20, false,p);
 		
 		

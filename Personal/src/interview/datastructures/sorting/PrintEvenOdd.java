@@ -9,7 +9,7 @@ public class PrintEvenOdd {
     t2.start(); t1.start();
    
 }
-    
+    Retreiving the OUT Params from Proc
 }
 
 class TaskEvenOdd implements Runnable {
