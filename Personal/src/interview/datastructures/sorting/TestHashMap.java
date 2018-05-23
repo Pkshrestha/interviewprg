@@ -1,7 +1,9 @@
 package interview.datastructures.sorting;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class TestHashMap {
 
@@ -17,6 +19,10 @@ System.out.println(e.hashCode());
 map.put(e, "kiran");
 
 
+
+
+ConcurrentHashMap hs=new ConcurrentHashMap();
+hs.put("hi", "bye");
 e.setEmp("Brendon");
 e.setSal("1500000");
 
