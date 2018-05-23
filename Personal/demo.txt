@@ -1,0 +1,10 @@
+
+In the above example before serialization Account object can provide proper username and password. But after Deserialization Account object can provide only username but not password. This is due to declaring password as transient. Hence doing default serialization there may be a chance of loss of information due to transient keyword.
+We can recover this loss of information by using customized serialization.
+We can implements customized serialization by using the following two methods.
+private void writeObject(OutputStream os) throws Exception.
+This method will be executed automatically by jvm at the time of serialization.
+It is a callback method. Hence at the time of serialization if we want to perform any extra work we have to define that in this method only.
+private void readObject(InputStream is)throws Exception.
+This method will be executed automatically by JVM at the time of Deserialization. Hence at the time of Deserialization if we want to perform any extra activity we have to define that in this method only.
+Example 6: Demo program for customized serialization to recover loss of information which is happen due to transient keyword.
