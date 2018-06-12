@@ -57,7 +57,7 @@ class MyThreadReader implements Runnable{
 private File file;
 private int i;
 private long lineCount;
-private Map<String,Integer> map=new HashMap<String,Integer>();	
+private Map<String,Integer> map;	
 
 	public MyThreadReader(File file, int i, long lineCount,Map<String,Integer> map) {
 	super();

@@ -89,6 +89,12 @@ class LinkedList {
 		size = 0;
 	}
 
+	public LinkedList(int size) {
+		start = null;
+		end = null;
+		this.size = size;
+	}
+
 	public int size() {
 		return size;
 	}
@@ -125,12 +131,14 @@ class LinkedList {
 
 	public void traverse() {
 		Node pointer = start;
+		System.out.print("[");
 		for (int i = 0; i < size; i++) {
 
-			System.out.println(pointer.value);
+			System.out.print(pointer.value+",");
 			pointer = pointer.next;
 
 		}
+		System.out.print("]");
 	}
 
 	public void addAtPosition(int value, int position) {

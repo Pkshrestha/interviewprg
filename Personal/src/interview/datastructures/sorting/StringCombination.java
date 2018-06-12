@@ -14,7 +14,7 @@ getCombination(s);
 			//we are passing -1 in argument for gettiing non repeat character like ab,ba,aa,bb,cc
 			//if you want all combination then getallcombination(s,s.length(),i,"",-1);
 		
-			getallcombination(s,s.length(),i,"",-1);
+			getallcombination(s,s.length(),3,"",-1);
 		}
 	}
 
